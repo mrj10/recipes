@@ -1,0 +1,35 @@
+\documentclass[letterpaper]{recipe}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{times,enumerate,ifthen}
+\usepackage[usenames]{color}
+
+\newcommand{\bsi}[2]{%
+  \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+  \fontsize{#1}{#2}\selectfont}
+
+\renewcommand{\inghead}{\textbf{Ingredients}:\ }
+%\renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+\renewcommand{\rechead}{\centering\huge\sffamily\bfseries\color{red}}
+\makeatletter \setlength{\@totalleftmargin}{0pt}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+\makeatother \setlength\parindent{0pt} \setlength\parskip{2ex plus 0.5ex}
+ \pagestyle{empty}
+\begin{document}
+\recipe{ Matt's Candied Bacon} \ingred{1 pound bacon, 1 cup brown sugar, 1 teaspoon
+ground cayenne pepper (optional)}
+
+
+\begin{enumerate}[{\color{blue} 1.}]
+\addtolength{\itemindent}{2em}
+\item Preheat oven to 325 degrees.
+\item Mix brown sugar and cayenne pepper in a loaf pan or bowl.
+\item Coat each strip of bacon with sugar/pepper mixture.  There should be a thin, even coat of sugar
+along the entire strip, with no big chunks.
+\item Lay strips next to each other (do not stack them) in a large cookie sheet with aluminum foil.
+\item Place cookie sheet in oven for {\bf 30 minutes}.
+\item Carefully remove bacon from cookie sheet using a fork.  Place bacon on a plate.
+\item Use a paper towel to dab off pools of bacon grease.
+\item Allow bacon grease to cool before throwing away the aluminum foil, grease, and burnt sugar.
+\end{enumerate}
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass[letterpaper]{recipe}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{times,enumerate,ifthen}
+\usepackage[usenames]{color}
+
+\newcommand{\bsi}[2]{%
+  \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+  \fontsize{#1}{#2}\selectfont}
+
+\renewcommand{\inghead}{\textbf{Ingredients}:\ }
+%\renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+\renewcommand{\rechead}{\centering\huge\sffamily\bfseries\color{red}}
+\makeatletter \setlength{\@totalleftmargin}{0pt}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+\makeatother \setlength\parindent{0pt} \setlength\parskip{2ex plus 0.5ex}
+ \pagestyle{empty}
+\begin{document}
+\recipe{ Shrimp Feta Pasta } \ingred{3 tablespoons olive oil, 1 lb peeled and deveined shrimp,
+5 cloves minced garlic (1 heaping tablespoon chopped garlic), 1 tablespoon white wine (Pinot Grigio),
+1 lb linguine, 2 roma tomatoes, 2 teaspoon dried oregano, 1 teaspoon dried basil,
+6 ounces crumbled feta cheese, 1 8-ounce can tomato sauce with garlic.
+Parsley, garlic salt, and lemon juice to taste}
+
+\begin{enumerate}[{\color{blue} 1.}]
+\addtolength{\itemindent}{2em}
+\item Boil water for pasta.  Add kosher salt and a pinch of olive oil.
+\item Simmer shrimp, garlic, 2 tablespoons olive oil, and white wine in a medium skillet over medium heat for 5 minutes.
+\item Take the core out of the tomatoes with a paring knife and cut a small X in the other end of the tomato.
+\item When the water is boiling, drop the tomatoes in for 30 seconds, then immediately put them under running water to remove the skin.  Chop into medium-size pieces.
+\item Put the linguine in the water for 8-10 minutes or until al-dente.
+\item Remove the shrimp after 5 minutes and put in the tomatoes, tomato sauce, remaining 1 tablespoon olive oil, and herbs.  Simmer over medium heat for 10 minutes.
+\item Toss hot pasta with shrimp, tomato sauce, and feta.  Feta will melt slightly.
+\item Serve; finish with lemon juice to taste. 
+\end{enumerate}
+\end{document}

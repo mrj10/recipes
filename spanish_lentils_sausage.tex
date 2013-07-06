@@ -1,0 +1,34 @@
+\documentclass[letterpaper]{recipe}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{times,enumerate,ifthen}
+\usepackage[usenames]{color}
+
+\newcommand{\bsi}[2]{%
+  \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+  \fontsize{#1}{#2}\selectfont}
+
+\renewcommand{\inghead}{\textbf{Ingredients}:\ }
+%\renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+\renewcommand{\rechead}{\centering\huge\sffamily\bfseries\color{red}}
+\makeatletter \setlength{\@totalleftmargin}{0pt}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+\makeatother \setlength\parindent{0pt} \setlength\parskip{2ex plus 0.5ex}
+ \pagestyle{empty}
+\begin{document}
+\recipe{ Spanish-Style Braised Lentils with Sausage }
+\ingred{ 1 teaspoon vegetable oil, 1 pound kielbasa sausage cut into 4 equal length and split lengthwise, 1 minced onion,
+salt, pepper, 2 minced garlic cloves, 1 teaspoon sweet paprika, 1 teaspoon chili powder, 1 teaspoon minced fresh or 1/4 teaspoon dry thyme,
+1 14.5-ounce can diced tomatoes, drained, 1 1/2 cups low-sodium chicken broth, 1 1/2 cups water, 1 cup du Puy, brown, or green lentils, picked over and rinsed,
+2 scallions, sliced thin }
+
+\begin{enumerate}[{\color{blue} 1.}]
+\addtolength{\itemindent}{2em}
+\item Heat the oil in a 12-inch skillet over medium-high heat until shimmering.  Lay the sausage in the skillet cut-side down.  Cook until browned, about 2 minutes.  Transfer to a plate, leaving the fat in the pan.
+\item Return the skillet with the fat to medium-high heat until shimmering.  Add the onion and 1/2 teaspoon salt and cook until softened, about 5 minutes.
+\item Stir in the garlic, paprika, chili powder, and thyme.  Cook until fragrant, about 15 seconds.
+\item Stir in the tomatoes, broth, water, and lentils.  Bring to a boil.  Cover, reduce heat to low, and cook until the lentils are tender but still a little crunchy, about 35 minutes.
+\item Nestle the kielbasa into the lentils and continue to cook, covered, over low heat until the lentils are completely tender, about 10 minutes.
+\item Season with salt and pepper to taste.  Sprinkle with scallions before serving.
+\end{enumerate}
+\end{document}

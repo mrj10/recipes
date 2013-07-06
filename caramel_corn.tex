@@ -1,0 +1,34 @@
+\documentclass[letterpaper]{recipe}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{times,enumerate,ifthen}
+\usepackage[usenames]{color}
+
+\newcommand{\bsi}[2]{%
+  \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+  \fontsize{#1}{#2}\selectfont}
+
+\renewcommand{\inghead}{\textbf{Ingredients}:\ }
+%\renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+\renewcommand{\rechead}{\centering\huge\sffamily\bfseries\color{red}}
+\makeatletter \setlength{\@totalleftmargin}{0pt}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+\makeatother \setlength\parindent{0pt} \setlength\parskip{2ex plus 0.5ex}
+ \pagestyle{empty}
+\begin{document}
+\recipe{ Microwave Caramel Corn} \ingred{1 cup of brown sugar, 1/2 cup of butter, 
+1/4 cup pancake syrup, 1/2 tsp. salt, 1/2 tsp. baking soda, 4 quarts puffcorn}
+
+
+\begin{enumerate}[{\color{blue} 1.}]
+\addtolength{\itemindent}{2em}
+\item Mix together brown sugar, butter, corn syrup, and salt in a microwave safe bowl.
+\item Microwave on high for 2 minutes, then stir.
+\item Microwave on high for 2 minutes, then stir.
+\item Add baking soda and mix well.
+\item Pour over 4 quarts of puffcorn (in brown paper bag), then shake.
+\item Microwave for 45 seconds, then shake.
+\item Microwave 2 more times for 45 seconds, shaking each time.
+\item Pour on cookie sheet to cool.
+\end{enumerate}
+\end{document}
